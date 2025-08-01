@@ -1,0 +1,15 @@
+data_inv                # input files
+FF_2D_results           # output files
+weightall_weighted.txt  # weight files
+yunnanEYA               # model file
+1                       # state of MRF data (1: .out (sac format); 0: MRF.txt file)
+0.10 0.10               # data and model sampling(s) (if it's 0, sampling will be equal to AMRFs)
+8.00                    # duration (s) of AMRFs. (if it's 0, duration will be length of original AMRFs)
+137.0 75.0   0.0        # strike, dip, and rake (degree) of faults plane
+2.0                     # rupture speed (km/s)
+1.079 18                # moment (N.m) (1) exp (2) or Mw (1) 0.0 (2)
+8.0                     # source depth   
+-2.00 8.00 0.50         # x_start, x_end, and dx(km). x arixs is along strike.
+-2.00 6.00 0.50         # y_start, y_end, and dy(km). y arixs is along down-dip
+10 5                    # triangle number in a grid unit, and sampling point in a triangle
+0.01 0.1 0.05           # damping for Moment constriant, temporal smooth, and spatial smooth

@@ -1,0 +1,14 @@
+data_inv                    # input files
+Directivity_results         # output files
+weightall_weighted.txt      # weight files
+1                    # state of MRF data (1: .out (sac format); 0: MRF.txt file)
+0.10 0.10            # data and model sampling(s) (if it's 0, sampling will be equal to AMRFs)
+8.00                 # duration (s) of AMRFs will be used. (if it's 0, duration will be length of original AMRFs)
+3.36 3.36 2.650      # velocity (km/s) of P wave and S wave and density (g/cm^3) in source zone. 
+137.0 75.0           # strike and dip (degree) of faults plane
+0.4 3.6 0.2          # rupture speed searching range (low,high,interval) (km/s)
+190 480 5 120        # rupture direction searching range (low,high,interval,shift)
+1.079 18             # moment (N.m) (1) exp (2) or Mw (1) 0.0 (2) 
+0                    # ts (length of MRFd, default is 0.3 time MRF). if it is 0, default will be used
+1                    # state of model (only if r_state and r_end are 0; 1:unilatral; 0:bilateral)
+0.01 0.10 0.05       # damping for Moment constriant, temporal smooth, and spatial smooth

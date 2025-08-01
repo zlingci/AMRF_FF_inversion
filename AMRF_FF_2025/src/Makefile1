@@ -1,0 +1,15 @@
+all: taper taper1 rtrend remean
+
+taper: taper.c sacio.c
+	gcc -o ./$@ $@.c sacio.c -lm
+
+taper1: taper1.c sacio.c
+	gcc -o ./$@ $@.c sacio.c -lm
+
+remean: remean.c sacio.c
+	gcc -o ./$@ $@.c sacio.c -lm
+
+rtrend: rtrend.c sacio.c
+	gcc -o ./$@ $@.c sacio.c -lm
+clean:
+	rm -f *.o taper taper1 rtrend remean

@@ -1,0 +1,9 @@
+all: sac2wiggle sac2wiggle1
+
+sac2wiggle1: sac2wiggle1.c sacio.c
+	gcc -o ./$@ $@.c sacio.c -lm
+
+sac2wiggle: sac2wiggle.c sacio.c
+	gcc -o ./$@ $@.c sacio.c -lm
+clean:
+	rm -f *.o sac2wiggle sac2wiggle1

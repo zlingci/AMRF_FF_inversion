@@ -1,5 +1,5 @@
 # AMRF_FF_inversion
-- Inversions for the rupture processes of small to moderate earthquakes with near-source data.
+- Source Inversion for small to moderate earthquakes with near-source seismic data.
 - Line source & finite fault NNLSQ inversions with AMRFs.
 # Example: 
 - the 2021 M6.0 Yangbi earthquake, Yunnan, China
